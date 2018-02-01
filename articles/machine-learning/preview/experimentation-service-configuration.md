@@ -169,6 +169,9 @@ The execution environment on local Docker is prepared using the Azure Machine Le
 >[!NOTE]
 >If running a PySpark script on Spark, spark_dependencies.yml is also used in addition to conda_dependencies.yml.
 
+>[!NOTE]
+>The current version of Windows Server 2016, which is used by the [Data Science Windows VM](https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/overview), does not support the necessary local Linux Docker images.  
+
 Running your scripts on a Docker image gives you the following benefits:
 
 1. It ensures that your script can be reliably executed in other execution environments. Running on a Docker container helps you discover and avoid any local references that may impact portability. 
